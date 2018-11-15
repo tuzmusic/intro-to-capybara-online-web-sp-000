@@ -6,7 +6,7 @@ class Application < Sinatra::Base
 
   post '/greet' do
     @name = params[:user_name]
-    raise @name.inspect
+    # raise @name.inspect
     erb :greet
   end
 
