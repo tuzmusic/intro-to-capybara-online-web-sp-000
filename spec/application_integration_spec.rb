@@ -8,7 +8,7 @@ describe "GET '/' - Greeting Form" do
   end
 
   # New test
-  xit 'has a greeting form with a user_name field' do
+  it 'has a greeting form with a user_name field' do
     visit '/'
 
     expect(page).to have_selector("form")
