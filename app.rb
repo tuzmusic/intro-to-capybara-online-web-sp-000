@@ -4,7 +4,7 @@ class Application < Sinatra::Base
     erb :index
   end
 
-  get '/greet'  do
+  post '/greet'  do
     @name = params[:user_name]
     erb :greet
   end
